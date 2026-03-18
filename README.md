@@ -1,5 +1,9 @@
 # DUILIO FPV
 
+![Status](https://img.shields.io/badge/status-in%20development-orange)
+![Platform](https://img.shields.io/badge/platform-raspberry--pi%20%7C%20pc-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+
 > Real-time remote control. No distance limits.
 
 Duilio FPV unlocks real-time remote control with ultra-low latency, allowing you to drive and operate systems anywhere — without distance limits.
@@ -10,7 +14,7 @@ Flexible by design and hardware-agnostic, Duilio FPV supports multiple motor con
 
 ---
 
-##  Key Features
+## 🚀 Key Features
 
 - **Ultra-low latency control**  
   Real-time responsiveness for precise driving and operation
@@ -35,21 +39,21 @@ Flexible by design and hardware-agnostic, Duilio FPV supports multiple motor con
 
 ---
 
-##  Architecture
+## 🧩 Architecture
 
 The project is divided into:
 
 - **Onboard (Raspberry Pi)**  
   Control, communication, sensors, and low-level logic  
-  https://github.com/giuliodori/duilio_fpv_onboard
+  👉 https://github.com/giuliodori/duilio_fpv_onboard
 
 - **Offboard (PC)**  
   UI, control interface, remote management  
-  https://github.com/giuliodori/duilio_fpv_offboard
+  👉 https://github.com/giuliodori/duilio_fpv_offboard
 
 ---
 
-##  Project Goal
+## 🎯 Project Goal
 
 Duilio FPV was born from a real need: enabling a person with a physical disability to mow the lawn remotely.
 
@@ -59,7 +63,7 @@ From this starting point, the possibilities expand to robotics, remote vehicles,
 
 ---
 
-##  Status
+## 🚧 Status
 
 Work in progress — core architecture is under active development.
 
@@ -67,10 +71,16 @@ Work in progress — core architecture is under active development.
 
 ## 🔗 Ecosystem
 
-- Duilio FPV (this repository) → main project hub  
-- Onboard system → Raspberry Pi control layer  
-- Offboard system → PC interface and remote control  
-- Duilio F4 → optimized hardware platform
+- **Duilio FPV** → main project hub  
+- **Onboard system** → Raspberry Pi control layer  
+- **Offboard system** → PC interface and remote control  
+- **Duilio F4** → optimized hardware platform  
+
+---
+
+## 🤝 Contributing
+
+Contributions, ideas, and feedback are welcome.
 
 ---
 
