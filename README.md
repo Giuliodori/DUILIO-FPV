@@ -1,5 +1,3 @@
-# DUILIO-FPV
-DUILIO-FPV ecosystem – onboard (Raspberry Pi) and offboard (PC) control system for robotics and remote vehicles.
 # DUILIO FPV
 
 Duilio FPV is a modular ecosystem for remote control systems, robotics, and distributed motor control.
