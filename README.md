@@ -1,5 +1,4 @@
-# DUILIO FPV
-
+# DUILIO FPV — Limitless Remote Control
 
 > Real-time remote control. No distance limits.
 
@@ -24,9 +23,6 @@ Flexible by design and hardware-agnostic, Duilio FPV supports multiple motor con
 
 - **Modular architecture**  
   Separate onboard (Raspberry Pi) and offboard (PC) systems
-
-- **Multiple motor control methods**  
-  PWM, step/dir, analog interfaces, and more
 
 - **Hardware-agnostic design**  
   Works with different platforms, optimized with Duilio F4
@@ -71,14 +67,16 @@ Work in progress — core architecture is under active development.
 - **Duilio FPV** → main project hub  
 - **Onboard system** → Raspberry Pi control layer  
 - **Offboard system** → PC interface and remote control  
-- **Duilio F4** → optimized hardware platform  
+- **[Duilio F4 hardware](https://github.com/Giuliodori/duilio_f4)** → optimized hardware platform  
 
 ---
 
-## 🤝 Contributing
+## 👤 Author
 
-Contributions, ideas, and feedback are welcome.
+**Fabio Giuliodori**  
+Founder & Creator — Duilio FPV  
+Building real-world remote control systems without limits  
 
----
-
-This repository is the main hub of the Duilio FPV ecosystem.
+🌐 Website: https://duilio.cc  
+🔗 LinkedIn: https://linkedin.com/in/fabio-giuliodori  
+✉️ Email: info@duilio.cc
