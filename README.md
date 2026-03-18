@@ -10,7 +10,11 @@ Flexible by design and hardware-agnostic, Duilio FPV supports multiple motor con
 
 ---
 
+<<<<<<< HEAD
 ## 🚀 Key Features
+=======
+## Key Features
+>>>>>>> b78399e (aggiornato readme)
 
 - **Ultra-low latency control**  
   Real-time responsiveness for precise driving and operation
@@ -32,12 +36,17 @@ Flexible by design and hardware-agnostic, Duilio FPV supports multiple motor con
 
 ---
 
+<<<<<<< HEAD
 ## 🧩 Architecture
+=======
+## Architecture
+>>>>>>> b78399e (aggiornato readme)
 
 The project is divided into:
 
 - **Onboard (Raspberry Pi)**  
   Control, communication, sensors, and low-level logic  
+<<<<<<< HEAD
   👉 https://github.com/giuliodori/duilio_fpv_onboard
 
 - **Offboard (PC)**  
@@ -47,6 +56,17 @@ The project is divided into:
 ---
 
 ## 🎯 Project Goal
+=======
+  https://github.com/giuliodori/duilio_fpv_onboard
+
+- **Offboard (PC)**  
+  UI, control interface, remote management  
+  https://github.com/giuliodori/duilio_fpv_offboard
+
+---
+
+## Project Goal
+>>>>>>> b78399e (aggiornato readme)
 
 Duilio FPV was born from a real need: enabling a person with a physical disability to mow the lawn remotely.
 
@@ -56,13 +76,21 @@ From this starting point, the possibilities expand to robotics, remote vehicles,
 
 ---
 
+<<<<<<< HEAD
 ## 🚧 Status
+=======
+## Status
+>>>>>>> b78399e (aggiornato readme)
 
 Work in progress — core architecture is under active development.
 
 ---
 
+<<<<<<< HEAD
 ## 🔗 Ecosystem
+=======
+## Ecosystem
+>>>>>>> b78399e (aggiornato readme)
 
 - **Duilio FPV** → main project hub  
 - **Onboard system** → Raspberry Pi control layer  
@@ -71,7 +99,11 @@ Work in progress — core architecture is under active development.
 
 ---
 
+<<<<<<< HEAD
 ## 👤 Author
+=======
+## Author
+>>>>>>> b78399e (aggiornato readme)
 
 **Fabio Giuliodori**  
 Founder & Creator — Duilio FPV  
