@@ -1,8 +1,5 @@
 # DUILIO FPV
 
-![Status](https://img.shields.io/badge/status-in%20development-orange)
-![Platform](https://img.shields.io/badge/platform-raspberry--pi%20%7C%20pc-blue)
-![License](https://img.shields.io/badge/license-MIT-green)
 
 > Real-time remote control. No distance limits.
 
