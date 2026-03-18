@@ -49,7 +49,7 @@ The project is divided into:
 
 ---
 
-## 🎯 Project Goal
+##  Project Goal
 
 Duilio FPV was born from a real need: enabling a person with a physical disability to mow the lawn remotely.
 
