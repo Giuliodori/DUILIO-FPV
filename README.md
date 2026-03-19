@@ -123,6 +123,21 @@ Work in progress — core architecture is under active development.
 
 ---
 
+## Stack & Integrations
+
+![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
+![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-C51A4A?logo=raspberrypi&logoColor=white)
+![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=white)
+![Arducam](https://img.shields.io/badge/Arducam-005BAC?logo=camera&logoColor=white)
+![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
+![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white)
+![WireGuard](https://img.shields.io/badge/WireGuard-88171A?logo=wireguard&logoColor=white)
+![WebRTC](https://img.shields.io/badge/WebRTC-333333?logo=webrtc&logoColor=white)
+![WebSocket](https://img.shields.io/badge/WebSocket-4A4A4A?logo=socketdotio&logoColor=white)
+![DuckDNS](https://img.shields.io/badge/DuckDNS-FFCC00?logo=duckduckgo&logoColor=black)
+
+---
+
 ## Author
 
 **Fabio Giuliodori**  
