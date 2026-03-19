@@ -33,7 +33,7 @@ Built to remove physical barriers, Duilio FPV brings real-world actions into the
 
 - Unlimited range remote control over WiFi and 4G/5G
 - Ultra-low latency real-time operation
-- Fully open source (GPLv3)
+- Dual license: GPLv3 (copyleft) OR commercial license (for proprietary/closed-source use)
 - Hardware-agnostic design
 - Distributed architecture (PC + Raspberry Pi + STM32)
 - Built-in safety and failsafe logic
