@@ -1,9 +1,9 @@
-Duilio FPV Onboard — Dual Licensing Notice
+Duilio FPV — Dual License (GPL-3.0-only OR Commercial)
 
 Copyright (C) Fabio Giuliodori.
 All rights reserved.
 
-This project is available under one of the following licenses, at your option:
+This project is dual-licensed. You may use this project under either:
 
 1) GNU General Public License, version 3 (GPL-3.0-only)
    - If you distribute this software (or a derivative work), you must comply with GPLv3,
@@ -15,6 +15,8 @@ This project is available under one of the following licenses, at your option:
    - Contact: info@duilio.cc
 
 SPDX-License-Identifier: GPL-3.0-only
+
+License choice summary: GPL-3.0-only OR Commercial.
 
 ---
 Below is the verbatim text of the GNU General Public License v3:
