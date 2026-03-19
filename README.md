@@ -31,7 +31,7 @@ Built to remove physical barriers, Duilio FPV brings real-world actions into the
 
 ## Highlights
 
-- Unlimited range remote control over WiFi and 4G/5G
+- Unlimited range remote control over Wi-Fi and 4G/5G
 - Ultra-low latency real-time operation
 - Dual license: GPLv3 (copyleft) OR commercial license (for proprietary/closed-source use)
 - Hardware-agnostic design
@@ -140,6 +140,23 @@ The project is divided into:
 
 ---
 
+## Repository Scope
+
+This repository is the main Duilio FPV hub and project presentation.
+Implementation code lives in the dedicated repositories below.
+
+---
+
+## Quick Start
+
+1. Offboard (PC station): https://github.com/giuliodori/duilio_fpv_offboard
+2. Onboard (Raspberry Pi): https://github.com/giuliodori/duilio_fpv_onboard
+3. Duilio F4 hardware/firmware: https://github.com/Giuliodori/duilio_f4
+
+Suggested order: Offboard -> Onboard -> Duilio F4.
+
+---
+
 ## Project Goal
 
 Duilio FPV was born from a real need: enabling a person with a physical disability to mow the lawn remotely.
@@ -153,6 +170,11 @@ From this starting point, the project expands toward robotics, remote vehicles, 
 ## Status
 
 Active development — core architecture is functional and continuously evolving.
+
+Current focus:
+- reliability and failsafe validation
+- telemetry quality and diagnostics
+- deployment hardening for real-world operation
 
 ---
 
