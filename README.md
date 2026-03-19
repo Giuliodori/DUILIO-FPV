@@ -46,48 +46,29 @@ As with a videogame, the operator controls the vehicle from a PC with a gamepad 
 
 ```mermaid
 flowchart LR
-    A["Offboard system (PC + monitor + gamepad)"]
-    B["Encrypted VPN"]
-    C["Onboard system (Rpi5 + camera)"]
-    D["Duilio F4 (motion control)"]
-    A --> B
-    B --> A
-    B --> C
-    C --> B
-    D --> C
-    C --> D
+    A["PC<br/>Gamepad + UI"]
+    B["Raspberry Pi<br/>Video + Logic"]
+    C["Duilio F4<br/>Real-time control"]
+
+    A <--> B
+    B <--> C
 ```
 
 Core flow:
 
 1. Low-latency connection  
-   Video and commands are transmitted over Wi-Fi mesh or 4G/5G, with encrypted VPN communication.
+   Commands and video are exchanged over Wi-Fi or 4G/5G networks.
 
 2. Remote control station (PC)  
-   The operator sends driving commands and receives live audio and visual feedback.
+   The operator sends commands and receives live video/audio feedback.
 
-3. Integrated safety logic  
-   Automatic failsafe behavior and supervision mechanisms support safe operations.
+3. Onboard processing (Raspberry Pi)  
+   Handles communication, video streaming, and high-level logic.
 
-4. Telemetry and diagnostics  
-   Operational data can be monitored and logged for analysis.
-
----
-
-## Core Features
-
-- Fully open source (GPLv3), designed to be transparent, hackable, and extensible
-- Hardware-agnostic system adaptable to a wide range of machines (RC, robotics, industrial)
-- Distributed architecture with Raspberry Pi (high-level control) and onboard control nodes
-- Hybrid connectivity (WiFi + 4G/5G) for unlimited range with automatic failover
-- Real-time remote control with ultra-low latency pipeline
-- Audio and video streaming for FPV operation
-- Gamepad-based control interface
-- Runtime flexibility:
-  - Instant switching between vehicles and operators
+4. Real-time control (Duilio F4)  
+   Executes precise motor control and safety-critical functions.
 
 ---
-
 ## Duilio F4 — Advanced Features
 
 - Dedicated STM32 real-time control for precise and reliable actuation
