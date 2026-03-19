@@ -26,13 +26,6 @@ Built to remove physical barriers, Duilio FPV brings real-world actions into the
 
 ---
 
-## Visual Preview
-
-| FPV Camera | Telemetry UI |
-|---|---|
-| <img src="docs/images/camera.png" alt="FPV camera" width="360" /> | <img src="docs/images/gauge_duilio_fpv.png" alt="Telemetry gauges" width="360" /> |
-
----
 
 ## Key Features
 
