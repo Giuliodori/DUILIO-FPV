@@ -1,4 +1,4 @@
-<p align="center">
+<p align="left">
   <img src="docs/images/logo_duilio.png" alt="Duilio logo" width="220" />
 </p>
 
@@ -6,9 +6,10 @@
 
 
 
-<p align="center">
+<p align="left">
   <img src="docs/images/lawn_mover_p46_4wd.png" alt="Duilio FPV platform" width="720" />
 </p>
+
 ## Real-time remote control. No distance limits.
 
 Duilio FPV enables ultra-low-latency remote driving and machine operation from anywhere, using Wi-Fi mesh and 4G/5G connectivity.
