@@ -2,6 +2,14 @@
 
 > Real-time remote control. No distance limits.
 
+<p align="center">
+  <img src="docs/images/logo_duilio.png" alt="Duilio logo" width="220" />
+</p>
+
+<p align="center">
+  <img src="docs/images/lawn_mower_front_p46_4wd.png" alt="Duilio FPV platform" width="720" />
+</p>
+
 Duilio FPV enables ultra-low-latency remote driving and machine operation from anywhere, using Wi-Fi mesh and 4G/5G connectivity.
 
 Built to remove physical barriers, Duilio FPV brings real-world actions into the digital space with a game-like operator experience.
@@ -15,6 +23,14 @@ Built to remove physical barriers, Duilio FPV brings real-world actions into the
 | Control | PC operator station with live first-person visual feedback |
 | Safety | Failsafe-first architecture and supervised operation |
 | Telemetry | Monitoring and diagnostics-ready workflow |
+
+---
+
+## Visual Preview
+
+| FPV Camera | Telemetry UI |
+|---|---|
+| <img src="docs/images/camera.png" alt="FPV camera" width="360" /> | <img src="docs/images/gauge_duilio_fpv.png" alt="Telemetry gauges" width="360" /> |
 
 ---
 
