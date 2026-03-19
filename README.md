@@ -2,7 +2,7 @@
   <img src="docs/images/logo_duilio.png" alt="Duilio logo" width="220" />
 </p>
 
-# DUILIO FPV — Limitless Remote Control
+# DUILIO FPV - Limitless Remote Control
 
 <p align="left">
   <img src="docs/images/lawn_mover_p46_4wd.png" alt="Duilio FPV platform" width="720" />
@@ -14,9 +14,13 @@ Duilio FPV enables real-time remote control of vehicles and machines from anywhe
 
 Built to remove physical barriers, Duilio FPV brings real-world actions into the digital space with a game-like operator experience.
 
----
+<p align="left">
+  <img src="docs/images/campo.jpg" alt="Duilio FPV at work in the field" width="720" />
+</p>
 
-## At a glance
+Real-world operation: Duilio FPV at work in the field.
+
+## At a Glance
 
 | Topic | Summary |
 |---|---|
@@ -27,18 +31,14 @@ Built to remove physical barriers, Duilio FPV brings real-world actions into the
 | Telemetry | Monitoring and diagnostics-ready workflow |
 | Architecture | Distributed system (PC + Raspberry Pi + STM32 real-time control) |
 
----
-
 ## Highlights
 
 - Unlimited range remote control over Wi-Fi and 4G/5G
 - Ultra-low latency real-time operation
-- Dual license: GPLv3 (copyleft) OR commercial license (for proprietary/closed-source use)
 - Hardware-agnostic design
 - Distributed architecture (PC + Raspberry Pi + STM32)
 - Built-in safety and failsafe logic
-
----
+- Optimized integration with Duilio F4 hardware
 
 ## How the System Works
 
@@ -56,63 +56,63 @@ flowchart LR
 
 Core flow:
 
-1. Low-latency connection  
+1. Low-latency connection
    Commands and video are exchanged over Wi-Fi or 4G/5G networks.
-
-2. Remote control station (PC)  
+2. Remote control station (PC)
    The operator sends commands and receives live video/audio feedback.
-
-3. Onboard processing (Raspberry Pi)  
+3. Onboard processing (Raspberry Pi)
    Handles communication, video streaming, and high-level logic.
-
-4. Real-time control (Duilio F4)  
+4. Real-time control (Duilio F4)
    Executes precise motor control and safety-critical functions.
 
----
-## Duilio F4 — Advanced Features
+## Duilio F4 - Advanced Features
 
 - Dedicated STM32 real-time control for precise and reliable actuation
 - Scalable multi-node system using robust RS-485 bus for motors and peripherals
 - Multi-mode motor control:
-  - Speed control (DC motors)
-  - Position control (servo/actuator)
+  speed control (DC motors) and position control (servo/actuator)
 - Advanced safety system:
-  - Multi-layer failsafe
-  - Fail-off logic
-  - Watchdog monitoring
-  - Safe state fallback
+  multi-layer failsafe, fail-off logic, watchdog monitoring, and safe state fallback
 - Local RC control with priority override over remote commands
 - Relay outputs for external device control:
-  - Lights
-  - Thermal engine ignition
-  - Horn
-  - Auxiliary systems
+  lights, thermal engine ignition, horn, and auxiliary systems
 - Integrated telemetry system with real-time data:
-  - Battery voltage
-  - Speed (km/h)
-  - Temperature
-  - Obstacle distance
-  - Network signal quality (WiFi / 4G / 5G)
-  - Real-time latency monitoring
+  battery voltage, speed, temperature, obstacle distance, signal quality, and latency
 - GPS support:
-  - Live map visualization
-  - Real-time position tracking
-- IMU integration with feedback (including vibration on gamepad)
+  live map visualization and real-time position tracking
+- IMU integration with feedback, including vibration on the gamepad
 - Assisted driving features:
-  - Straight-line stabilization
-  - Basic autopilot support
+  straight-line stabilization and basic autopilot support
 - Advanced remote interface:
-  - Live gauges (speed, compass, timers, vehicle info)
-  - On-screen messages and diagnostics
+  live gauges, messages, and diagnostics
 - Media control:
-  - High-resolution photo capture
-  - Dynamic video resolution control from gamepad
+  high-resolution photo capture and dynamic video resolution control
 - Full system monitoring:
-  - Trip data (distance, total time, total km)
-  - System status and diagnostics
-- Remote logging and diagnostics (e.g. via Telegram)
+  trip data, system status, and diagnostics
+- Remote logging and diagnostics support
 
----
+## Ecosystem Repositories
+
+### Onboard
+
+Machine-side software, typically running on Raspberry Pi-class hardware.
+
+- Repository: [duilio_fpv_onboard](https://github.com/giuliodori/duilio_fpv_onboard)
+- Scope: communication, control, sensors, low-level logic, hardware integration
+
+### Offboard
+
+Operator-side software, typically running on a PC.
+
+- Repository: [duilio_fpv_offboard](https://github.com/giuliodori/duilio_fpv_offboard)
+- Scope: user interface, remote control, telemetry visualization, operator workflow
+
+### Hardware
+
+Reference hardware platform optimized for the ecosystem.
+
+- Repository: [duilio_f4](https://github.com/Giuliodori/duilio_f4)
+- Scope: tested electronics base for tighter integration and higher reliability
 
 ## Why Duilio FPV
 
@@ -124,89 +124,52 @@ Unlike traditional RC systems, Duilio FPV is designed as a real distributed cont
 - Support for both hobby and industrial systems
 - Built for real-world applications, not just prototyping
 
----
-
-## Architecture
-
-The project is divided into:
-
-- Onboard (Raspberry Pi)  
-  Control, communication, sensors, and low-level logic  
-  https://github.com/giuliodori/duilio_fpv_onboard
-
-- Offboard (PC)  
-  UI, control interface, and remote management  
-  https://github.com/giuliodori/duilio_fpv_offboard
-
----
-
-## Repository Scope
-
-This repository is the main Duilio FPV hub and project presentation.
-Implementation code lives in the dedicated repositories below.
-
----
-
-## Quick Start
-
-1. Offboard (PC station): https://github.com/giuliodori/duilio_fpv_offboard
-2. Onboard (Raspberry Pi): https://github.com/giuliodori/duilio_fpv_onboard
-3. Duilio F4 hardware/firmware: https://github.com/Giuliodori/duilio_f4
-
-Suggested order: Offboard -> Onboard -> Duilio F4.
-
----
-
 ## Project Goal
 
 Duilio FPV was born from a real need: enabling a person with a physical disability to mow the lawn remotely.
 
-The vision is to remove physical barriers and bring real-world actions into the digital space — allowing anyone to operate machines, explore environments, and perform tasks from anywhere.
+The vision is to remove physical barriers and bring real-world actions into the digital space, allowing anyone to operate machines, explore environments, and perform tasks from anywhere.
 
 From this starting point, the project expands toward robotics, remote vehicles, and distributed automation systems.
 
----
+## Repository Scope
+
+This repository is the main Duilio FPV hub and project presentation. Most implementation code lives in the dedicated repositories above.
+
+Choose your entry point:
+
+1. Start from `offboard` if you want to see the operator experience and interface layer.
+2. Start from `onboard` if you want to inspect machine-side logic and hardware interaction.
+3. Start from `duilio_f4` if you want the reference electronics platform.
 
 ## Status
 
-Active development — core architecture is functional and continuously evolving.
+Active development - core architecture is functional and continuously evolving.
 
 Current focus:
+
 - reliability and failsafe validation
 - telemetry quality and diagnostics
 - deployment hardening for real-world operation
 
----
+## Contributing
 
-## Ecosystem
+Contribution guidelines are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
-- Duilio FPV → main project hub
-- Onboard system → Raspberry Pi control layer
-- Offboard system → PC interface and remote control
-- Duilio F4 hardware → https://github.com/Giuliodori/duilio_f4
+In short:
 
----
-
-## Stack & Integrations
-
-![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)
-![Raspberry Pi](https://img.shields.io/badge/Raspberry%20Pi-C51A4A?logo=raspberrypi&logoColor=white)
-![Debian](https://img.shields.io/badge/Debian-A81D33?logo=debian&logoColor=white)
-![Arducam](https://img.shields.io/badge/Arducam-005BAC?logo=camera&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?logo=linux&logoColor=black)
-![Windows](https://img.shields.io/badge/Windows-0078D6?logo=windows&logoColor=white)
-![WireGuard](https://img.shields.io/badge/WireGuard-88171A?logo=wireguard&logoColor=white)
-![WebRTC](https://img.shields.io/badge/WebRTC-333333?logo=webrtc&logoColor=white)
-![WebSocket](https://img.shields.io/badge/WebSocket-4A4A4A?logo=socketdotio&logoColor=white)
-![DuckDNS](https://img.shields.io/badge/DuckDNS-FFCC00?logo=duckduckgo&logoColor=black)
-
----
+- use this repository for hub-level issues and documentation updates
+- open code-specific issues and pull requests in the relevant subproject repository
 
 ## Author
 
-Fabio Giuliodori  
-Founder & Creator — Duilio FPV  
+Fabio Giuliodori
+Founder and Creator, Duilio FPV
 
-Website: https://duilio.cc  
-LinkedIn: https://linkedin.com/in/fabio-giuliodori  
-Email: info@duilio.cc
+- Website: https://duilio.cc
+- LinkedIn: https://linkedin.com/in/fabio-giuliodori
+- Email: info@duilio.cc
+
+## License
+
+This repository is distributed under the GPL-3.0 license. See [LICENSE](LICENSE).
