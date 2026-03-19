@@ -46,11 +46,11 @@ As with a videogame, the operator controls the vehicle from a PC with a gamepad 
 
 ```mermaid
 flowchart LR
-    A[Operator PC + Gamepad] --> B[Encrypted VPN over Wi-Fi mesh or 4G/5G]
-    B --> C[Onboard Control System (Raspberry Pi)]
-    C --> D[Vehicle Actuation + Camera Feedback]
+    A["Operator PC + Gamepad"] --> B["Encrypted VPN over Wi-Fi mesh or 4G/5G"]
+    B --> C["Onboard Control System (Raspberry Pi)"]
+    C --> D["Vehicle Actuation + Camera Feedback"]
     D --> A
-    C --> E[Telemetry & Diagnostics]
+    C --> E["Telemetry & Diagnostics"]
     E --> A
 ```
 
