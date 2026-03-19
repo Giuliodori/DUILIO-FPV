@@ -4,7 +4,7 @@
 
 Duilio FPV enables ultra-low-latency remote driving and machine operation from anywhere, using Wi-Fi mesh and 4G/5G connectivity.
 
-Built to remove physical barriers, Duilio FPV brings real-world actions into the digital space with a game-like operator experience and industrial-grade control logic.
+Built to remove physical barriers, Duilio FPV brings real-world actions into the digital space with a game-like operator experience.
 
 ### At a glance
 
@@ -33,7 +33,7 @@ Built to remove physical barriers, Duilio FPV brings real-world actions into the
   Separate onboard (Raspberry Pi) and offboard (PC) components.
 
 - **Hardware-agnostic design**  
-  Supports multiple motor control methods (PWM, step/dir, analog, and more).
+  Supports multiple motor control methods.
 
 - **Safety and reliability**  
   Designed with failsafe-first principles for real-world operation.
@@ -46,12 +46,18 @@ As with a videogame, the operator controls the vehicle from a PC with a gamepad 
 
 ```mermaid
 flowchart LR
-    A["Operator PC + Gamepad"] --> B["Encrypted VPN over Wi-Fi mesh or 4G/5G"]
-    B --> C["Onboard Control System (Raspberry Pi)"]
-    C --> D["Vehicle Actuation + Camera Feedback"]
-    D --> A
-    C --> E["Telemetry & Diagnostics"]
-    E --> A
+    A["Offboard system  (PC+monitor+gamepad)"]
+    B["Encrypted VPN"]
+    C["Onboard system  (Rpi5 + camera"]
+    D["DUILIO F4 (motion controlol)"]
+    A --> B
+    B --> A
+    B --> C
+    C --> B
+    D --> C
+    C --> D
+
+
 ```
 
 Core flow:
@@ -59,7 +65,7 @@ Core flow:
 1. **Low-latency connection**  
    Video and commands are transmitted over Wi-Fi mesh or 4G/5G, with encrypted VPN communication.
 2. **Remote control station (PC)**  
-   The operator sends driving commands and receives live visual feedback.
+   The operator sends driving commands and receives live audio and visual feedback.
 3. **Integrated safety logic**  
    Automatic failsafe behavior and supervision mechanisms support safe operations.
 4. **Telemetry and diagnostics**  
