@@ -4,19 +4,19 @@
 
 # DUILIO FPV — Limitless Remote Control
 
-
-
 <p align="left">
   <img src="docs/images/lawn_mover_p46_4wd.png" alt="Duilio FPV platform" width="720" />
 </p>
 
 ## Real-time remote control. No distance limits.
 
-Duilio FPV enables ultra-low-latency remote driving and machine operation from anywhere, using Wi-Fi mesh and 4G/5G connectivity.
+Duilio FPV enables real-time remote control of vehicles and machines from anywhere using Wi-Fi mesh and 4G/5G networks.
 
 Built to remove physical barriers, Duilio FPV brings real-world actions into the digital space with a game-like operator experience.
 
-### At a glance
+---
+
+## At a glance
 
 | Topic | Summary |
 |---|---|
@@ -25,29 +25,18 @@ Built to remove physical barriers, Duilio FPV brings real-world actions into the
 | Control | PC operator station with live first-person visual feedback |
 | Safety | Failsafe-first architecture and supervised operation |
 | Telemetry | Monitoring and diagnostics-ready workflow |
+| Architecture | Distributed system (PC + Raspberry Pi + STM32 real-time control) |
 
 ---
 
+## Highlights
 
-## Key Features
-
-- **Ultra-low latency control**  
-  Real-time responsiveness for precise driving and operation.
-
-- **Unlimited range**  
-  Operate from virtually anywhere through Wi-Fi mesh and 4G/5G networks.
-
-- **High-quality communication**  
-  Smooth control and robust video streaming for long-distance operation.
-
-- **Modular architecture**  
-  Separate onboard (Raspberry Pi) and offboard (PC) components.
-
-- **Hardware-agnostic design**  
-  Supports multiple motor control methods.
-
-- **Safety and reliability**  
-  Designed with failsafe-first principles for real-world operation.
+- Unlimited range remote control over WiFi and 4G/5G
+- Ultra-low latency real-time operation
+- Fully open source (GPLv3)
+- Hardware-agnostic design
+- Distributed architecture (PC + Raspberry Pi + STM32)
+- Built-in safety and failsafe logic
 
 ---
 
@@ -57,30 +46,102 @@ As with a videogame, the operator controls the vehicle from a PC with a gamepad 
 
 ```mermaid
 flowchart LR
-    A["Offboard system  (PC+monitor+gamepad)"]
+    A["Offboard system (PC + monitor + gamepad)"]
     B["Encrypted VPN"]
-    C["Onboard system  (Rpi5 + camera"]
-    D["DUILIO F4 (motion controlol)"]
+    C["Onboard system (Rpi5 + camera)"]
+    D["Duilio F4 (motion control)"]
     A --> B
     B --> A
     B --> C
     C --> B
     D --> C
     C --> D
-
-
 ```
 
 Core flow:
 
-1. **Low-latency connection**  
+1. Low-latency connection  
    Video and commands are transmitted over Wi-Fi mesh or 4G/5G, with encrypted VPN communication.
-2. **Remote control station (PC)**  
+
+2. Remote control station (PC)  
    The operator sends driving commands and receives live audio and visual feedback.
-3. **Integrated safety logic**  
+
+3. Integrated safety logic  
    Automatic failsafe behavior and supervision mechanisms support safe operations.
-4. **Telemetry and diagnostics**  
+
+4. Telemetry and diagnostics  
    Operational data can be monitored and logged for analysis.
+
+---
+
+## Core Features
+
+- Fully open source (GPLv3), designed to be transparent, hackable, and extensible
+- Hardware-agnostic system adaptable to a wide range of machines (RC, robotics, industrial)
+- Distributed architecture with Raspberry Pi (high-level control) and onboard control nodes
+- Hybrid connectivity (WiFi + 4G/5G) for unlimited range with automatic failover
+- Real-time remote control with ultra-low latency pipeline
+- Audio and video streaming for FPV operation
+- Gamepad-based control interface
+- Runtime flexibility:
+  - Instant switching between vehicles and operators
+
+---
+
+## Duilio F4 — Advanced Features
+
+- Dedicated STM32 real-time control for precise and reliable actuation
+- Scalable multi-node system using robust RS-485 bus for motors and peripherals
+- Multi-mode motor control:
+  - Speed control (DC motors)
+  - Position control (servo/actuator)
+- Advanced safety system:
+  - Multi-layer failsafe
+  - Fail-off logic
+  - Watchdog monitoring
+  - Safe state fallback
+- Local RC control with priority override over remote commands
+- Relay outputs for external device control:
+  - Lights
+  - Thermal engine ignition
+  - Horn
+  - Auxiliary systems
+- Integrated telemetry system with real-time data:
+  - Battery voltage
+  - Speed (km/h)
+  - Temperature
+  - Obstacle distance
+  - Network signal quality (WiFi / 4G / 5G)
+  - Real-time latency monitoring
+- GPS support:
+  - Live map visualization
+  - Real-time position tracking
+- IMU integration with feedback (including vibration on gamepad)
+- Assisted driving features:
+  - Straight-line stabilization
+  - Basic autopilot support
+- Advanced remote interface:
+  - Live gauges (speed, compass, timers, vehicle info)
+  - On-screen messages and diagnostics
+- Media control:
+  - High-resolution photo capture
+  - Dynamic video resolution control from gamepad
+- Full system monitoring:
+  - Trip data (distance, total time, total km)
+  - System status and diagnostics
+- Remote logging and diagnostics (e.g. via Telegram)
+
+---
+
+## Why Duilio FPV
+
+Unlike traditional RC systems, Duilio FPV is designed as a real distributed control platform:
+
+- No distance limits
+- Network-based control instead of proprietary RF
+- Scalable multi-node architecture
+- Support for both hobby and industrial systems
+- Built for real-world applications, not just prototyping
 
 ---
 
@@ -88,11 +149,11 @@ Core flow:
 
 The project is divided into:
 
-- **Onboard (Raspberry Pi)**  
+- Onboard (Raspberry Pi)  
   Control, communication, sensors, and low-level logic  
   https://github.com/giuliodori/duilio_fpv_onboard
 
-- **Offboard (PC)**  
+- Offboard (PC)  
   UI, control interface, and remote management  
   https://github.com/giuliodori/duilio_fpv_offboard
 
@@ -102,24 +163,24 @@ The project is divided into:
 
 Duilio FPV was born from a real need: enabling a person with a physical disability to mow the lawn remotely.
 
-The vision is simple but powerful — bringing physical actions into the digital world, so anyone can operate machines and perform real tasks from anywhere.
+The vision is to remove physical barriers and bring real-world actions into the digital space — allowing anyone to operate machines, explore environments, and perform tasks from anywhere.
 
-From this starting point, the possibilities expand to robotics, remote vehicles, automation, and many other real-world applications.
+From this starting point, the project expands toward robotics, remote vehicles, and distributed automation systems.
 
 ---
 
 ## Status
 
-Work in progress — core architecture is under active development.
+Active development — core architecture is functional and continuously evolving.
 
 ---
 
 ## Ecosystem
 
-- **Duilio FPV** → main project hub
-- **Onboard system** → Raspberry Pi control layer
-- **Offboard system** → PC interface and remote control
-- **[Duilio F4 hardware](https://github.com/Giuliodori/duilio_f4)** → optimized hardware platform
+- Duilio FPV → main project hub
+- Onboard system → Raspberry Pi control layer
+- Offboard system → PC interface and remote control
+- Duilio F4 hardware → https://github.com/Giuliodori/duilio_f4
 
 ---
 
@@ -140,10 +201,9 @@ Work in progress — core architecture is under active development.
 
 ## Author
 
-**Fabio Giuliodori**  
+Fabio Giuliodori  
 Founder & Creator — Duilio FPV  
-Building real-world remote control systems without limits
 
-🌐 Website: https://duilio.cc  
-🔗 LinkedIn: https://linkedin.com/in/fabio-giuliodori  
-✉️ Email: info@duilio.cc
+Website: https://duilio.cc  
+LinkedIn: https://linkedin.com/in/fabio-giuliodori  
+Email: info@duilio.cc
