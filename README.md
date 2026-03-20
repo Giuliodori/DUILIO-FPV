@@ -15,7 +15,7 @@ Duilio FPV enables real-time remote control of vehicles and machines from anywhe
 Built to remove physical barriers, Duilio FPV brings real-world actions into the digital space with a game-like operator experience.
 
 <p align="left">
-  <img src="docs/images/campo.jpg" alt="Duilio FPV at work in the field" width="720" />
+  <img src="docs/images/campo.png" alt="Duilio FPV at work in the field" width="720" />
 </p>
 
 Real-world operation: Duilio FPV at work in the field.
