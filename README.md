@@ -5,20 +5,16 @@
 # DUILIO FPV - Limitless Remote Control
 
 <p align="left">
-  <img src="docs/images/lawn_mover_p46_4wd.png" alt="Duilio FPV platform" width="720" />
-</p>
-
-## Real-time remote control. No distance limits.
-
-Duilio FPV enables real-time remote control of vehicles and machines from anywhere using Wi-Fi mesh and 4G/5G networks.
-
-Built to remove physical barriers, Duilio FPV brings real-world actions into the digital space with a game-like operator experience.
-
-<p align="left">
   <img src="docs/images/campo.png" alt="Duilio FPV at work in the field" width="720" />
 </p>
 
 Real-world operation: Duilio FPV at work in the field.
+
+## Real-time remote control. No distance limits.
+
+Duilio FPV enables real-time remote control of vehicles and machines from anywhere using Wi-Fi or 4G/5G networks.
+
+Built to remove physical barriers, Duilio FPV brings real-world actions into the digital space with a game-like operator experience.
 
 ## At a Glance
 
@@ -48,7 +44,7 @@ As with a videogame, the operator controls the vehicle from a PC with a gamepad 
 flowchart LR
     A["PC<br/>Gamepad + UI"]
     B["Raspberry Pi<br/>Video + Logic"]
-    C["Duilio F4<br/>Real-time control"]
+    C["Duilio F4 <br/>Real-time control"]
 
     A <--> B
     B <--> C
