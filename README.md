@@ -56,31 +56,53 @@ Core flow:
 4. Real-time control (Duilio F4)
    Executes precise motor control and safety-critical functions.
 
-## How the System Works (Advanced Features whith Duilio F4 Board)
+Basic feature set (Raspberry Pi-based deployment):
 
-- Dedicated STM32 real-time control for precise and reliable actuation
-- Scalable multi-node system using robust RS-485 bus for motors and peripherals
-- Multi-mode motor control:
-  speed control (DC motors) and position control (servo/actuator)
-- Advanced safety system:
-  multi-layer failsafe, fail-off logic, watchdog monitoring, and safe state fallback
-- Local RC control with priority override over remote commands
-- Relay outputs for external device control:
-  lights, thermal engine ignition, horn, and auxiliary systems
-- Integrated telemetry system with real-time data:
-  battery voltage, speed, temperature, obstacle distance, signal quality, and latency
-- GPS support:
-  live map visualization and real-time position tracking
-- IMU integration with feedback, including vibration on the gamepad
-- Assisted driving features:
-  straight-line stabilization and basic autopilot support
-- Advanced remote interface:
-  live gauges, messages, and diagnostics
-- Media control:
-  high-resolution photo capture and dynamic video resolution control
-- Full system monitoring:
-  trip data, system status, and diagnostics
-- Remote logging and diagnostics support
+- Real-time audio/video streaming with ultra-low latency
+- Full HD H.264 video quality with on-the-fly configuration
+- Secure connectivity via WireGuard VPN
+- Easy installation and configuration
+- Multi-machine / multi-operator configuration
+- Telemetry and remote configuration via Telegram
+- GPS support for real-time position visualization
+- Assisted driving autopilot
+- Stopwatch / chronometer
+- Temperature data
+- Multi-camera support
+- Audio support
+- Wi-Fi / mobile network / phone tethering support
+- Radio signal status visualization
+- RC steer/speed support
+- GPIO lights control
+- GPIO horn control
+- GPIO engine starter control
+- GPIO engine shutdown control
+- Full-resolution 4K photo capture and Telegram delivery
+- Telemetry delivery via Telegram
+
+## How the System Works (Advanced Features with Duilio F4 Board)
+
+Additional capabilities enabled by the Duilio F4 hardware platform:
+
+- Tachometer
+- Battery data
+- Instant power data
+- Slope / incline data
+- Distance traveled / trip data
+- Power relay output for lights
+- Power relay output for horn
+- Power relay output for engine starter
+- Power relay output for engine shutdown
+- Local 4-channel RC radio control
+- Integrated failsafe systems
+- 7–43V power input for Raspberry Pi and auxiliaries
+- Precision RC servo outputs
+- PWM/DIR outputs for high-power drivers (speed and position control)
+- On-the-fly speed limiter
+- Support for 2 sonars with real distance visualization
+- 4WD / 6WD operating modes
+- RS-485 expansion for additional boards, motors, outputs, and inputs
+- EMI/TVS filters and disturbance protection
 
 ## Ecosystem Repositories
 
