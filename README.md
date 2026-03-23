@@ -185,4 +185,6 @@ Founder and Creator, Duilio FPV
 
 ## License
 
-This repository is distributed under the GPL-3.0 license. See [LICENSE](LICENSE).
+This repository is distributed under the GPL-3.0 license  OR Commercial. See [LICENSE](LICENSE).
+
+
