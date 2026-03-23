@@ -36,19 +36,14 @@ Built to remove physical barriers, Duilio FPV brings real-world actions into the
 - Built-in safety and failsafe logic
 - Optimized integration with Duilio F4 hardware
 
-## How the System Works
+## How the System Works (Basic Features)
 
 As with a videogame, the operator controls the vehicle from a PC with a gamepad while viewing the onboard camera feed in first person.
 
-```mermaid
-flowchart LR
-    A["PC<br/>Gamepad + UI"]
-    B["Raspberry Pi<br/>Video + Logic"]
-    C["Duilio F4 <br/>Real-time control"]
+<p align="left">
+  <img src="docs/images/simple_overview.png" alt="Basic configuration" width="720" />
+</p>
 
-    A <--> B
-    B <--> C
-```
 
 Core flow:
 
@@ -61,7 +56,7 @@ Core flow:
 4. Real-time control (Duilio F4)
    Executes precise motor control and safety-critical functions.
 
-## Duilio F4 - Advanced Features
+## How the System Works (Advanced Features whith Duilio F4 Board)
 
 - Dedicated STM32 real-time control for precise and reliable actuation
 - Scalable multi-node system using robust RS-485 bus for motors and peripherals
